@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { TrendingUp, AlertCircle } from "lucide-react";
+import Feedback from "./Feedback";
 
 function RecommendationBadge({ rec }) {
   const map = {
@@ -91,6 +92,7 @@ export default function Predictions() {
                   ))}
                 </ul>
               )}
+              <Feedback symbol={d.symbol} runId={d.run_id} />
             </div>
           ))}
         </div>

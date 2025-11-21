@@ -1,6 +1,8 @@
 import Header from "./components/Header";
 import Predictions from "./components/Predictions";
 import LatestPredictions from "./components/LatestPredictions";
+import Leaderboard from "./components/Leaderboard";
+import Backtest from "./components/Backtest";
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <div className="relative max-w-5xl mx-auto px-6 py-10">
         <Header />
         <Predictions />
+        <Leaderboard />
+        <Backtest />
         <LatestPredictions />
         <div className="mt-10 text-center text-blue-300/60 text-sm">
           Data via Yahoo Finance. This is not financial advice.
